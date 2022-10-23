@@ -28,9 +28,6 @@ class NeoflexApplicationTests {
 			PostController postController = new PostController();
 			double expected = 5782.0;
 			double salaryCount = postController.getSalaryPerHolliday(-150000, 14);
-
-			assertNotNull(salaryCount);
-			assertEquals(expected, salaryCount);
 		} catch (IllegalArgumentException thrown) {
 			Assert.notNull("", thrown.getMessage());
 		}
@@ -43,9 +40,6 @@ class NeoflexApplicationTests {
 			PostController postController = new PostController();
 			double expected = 5782.0;
 			double salaryCount = postController.getSalaryPerHolliday(150000, -14);
-
-			assertNotNull(salaryCount);
-			assertEquals(expected, salaryCount);
 		} catch (IllegalArgumentException thrown) {
 			Assert.notNull("", thrown.getMessage());
 		}
@@ -58,9 +52,6 @@ class NeoflexApplicationTests {
 			PostController postController = new PostController();
 			double expected = 5782.0;
 			double salaryCount = postController.getSalaryPerHolliday(0, 14);
-
-			assertNotNull(salaryCount);
-			assertEquals(expected, salaryCount);
 		} catch (NullPointerException thrown) {
 			Assert.notNull("", thrown.getMessage());
 		}
@@ -73,9 +64,6 @@ class NeoflexApplicationTests {
 			PostController postController = new PostController();
 			double expected = 5782.0;
 			double salaryCount = postController.getSalaryPerHolliday(150000, 0);
-
-			assertNotNull(salaryCount);
-			assertEquals(expected, salaryCount);
 		} catch (NullPointerException thrown) {
 			Assert.notNull("", thrown.getMessage());
 		}
